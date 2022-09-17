@@ -1,0 +1,283 @@
+*, :after, :before{
+	@include reset;
+	box-sizing: border-box;
+}
+body, html{
+	font-family: $font-text;
+	font-size: $globalFontsSize + px;
+	line-height: 22px;
+	font-weight: 400;
+	overflow-x: hidden;
+	color: $black;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.maket:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: url(../img/main-page.png) no-repeat top center;
+	z-index: -1;
+	opacity: 0.4;
+	height: 281%;
+}
+
+.wrapper{
+	max-width: $siteWidth + px;
+	padding: 0 $spaceCol + px;
+	margin: auto;
+}
+
+
+.header{
+	height: 134px + 72px;
+	background: $blue;
+}
+
+.text_blue{
+	color: $blue;
+}
+.fill_gray{
+	background: $light-gray2;
+}
+.fill_black{
+	background: $black;
+}
+.btn{
+	display: inline-block;
+	padding: 14px 20px 14px 18px;
+	color: $white;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	background: $blue;
+	border-radius: 4px;
+	white-space: nowrap;
+	border: none;
+	outline: none;
+
+
+	svg{
+		position: relative;
+		top: 6px;
+		left: 8px;
+	}
+	path{
+		fill: $white;
+	}
+
+	&_small{
+		padding: 8px 16px 8px 12px;
+		font-size: 14px;
+		line-height: 18px;
+
+		svg{
+			position: relative;
+			top: 4px;
+			left: 4px;
+		}
+	}
+	&_white{
+		background: $white;
+		color: $black;
+
+		path{
+			fill: $black;
+		}
+	}
+	&_green{
+		background: $green;
+		color: $black;
+
+		path{
+			fill: $black;
+		}
+	}
+}
+.title{
+	font-family: $font-titles;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	margin: 32px 0;
+
+	&_green{
+		color: $green;
+	}
+}
+
+.first-screen{
+	padding: 26px 0;
+	margin: 40px 0;
+
+	&__tag{
+		background: $yellow;
+		border-radius: 4px;
+		line-height: 22px;
+		display: inline-block;
+		padding: 4px 16px;
+	}
+	&__description{
+		font-size: 24px;
+		line-height: 32px;
+		margin: 0 0 32px;
+		max-width: 710px;
+	}
+	&__image{
+		margin: -45px 0 0 -35px;
+	}
+}
+
+
+.actual-program{
+	margin: 380px 0 0;
+	padding: 35px 0;
+
+	&__info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 16px;
+	}
+	&__description{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		max-width: 363px;
+	}
+}
+.swiper-slide{
+	height: auto;
+}
+.actual-program__items{
+	margin-bottom: 30px;
+}
+.card{
+	border-radius: 4px;
+	background: $light-blue;
+	padding: 32px 54px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	min-height: 234px;
+
+	&__icon{
+		padding: 0 26px;
+		margin: 0 54px 0 0;
+	}
+	&__info{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		margin: 3px 0 8px;
+	}
+	&__description{
+		margin: 8px 0;
+	}
+
+	&__other{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__price{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+.consultation{
+	margin: 24px 104px;
+	padding: 40px 0;
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		border-radius: 12px;
+		padding: 48px;
+	}
+	&__info{
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	&__description{
+		color: $white;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 32px;
+		margin: 32px 0;
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	.input-name{
+		color: $white;
+		margin-bottom: 24px;
+
+		span{
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		input{
+			outline: none;
+			border: 1px solid $black;
+			border-radius: 4px;
+			padding: 12px 16px;
+			width: 100%;
+
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	input[type='checkbox']{
+		display: none;
+	}
+	.checkbox{
+		padding-left: 36px;
+		position: relative;
+	}
+	.checkbox::before{
+		content: '';
+		position: absolute;
+		top: -2px;
+		left: 0;
+		width: 21px;
+		height: 21px;
+		border: 2px solid $white;
+		border-radius: 3px;
+	}
+	input[type='checkbox']:checked + .checkbox::before{
+		border: none;
+		background: url("../img/checkbox.png") no-repeat center;
+	}
+	.btn{
+		align-self: end;
+	}
+
+}
+
+
+
