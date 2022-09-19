@@ -4,3 +4,393 @@
 @media (min-width: 769px){
 	.hide-desktop{display: none !important;}
 }
+
+@media (max-width: 1280px) {
+	.wrapper{
+		max-width: 1216 + px;
+	}
+	.title{
+		font-size: 32px;
+		line-height: 40px;
+		margin: 24px 0;
+	}
+	.btn{
+		font-size: $globalFontsSize + px;
+		line-height: 22px;
+		padding: 13px 20px 13px 16px;
+
+		&_down {
+			padding-top: 5px;
+		}
+	}
+
+	.header{
+		&__line{
+			padding: 16px 0;
+		}
+		.logo{
+			img{
+				max-height: 56px;
+			}
+		}
+		.contacts{
+			padding: 0 5px;
+		}
+		.contacts__work-hours,
+		.contacts__text{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.other-menu{
+			&__free{
+				display: none;
+			}
+		}
+		.tools{
+			.enter-lk{
+				display: none;
+			}
+		}
+
+	}
+
+	.first-screen {
+		padding: 24px 0;
+		margin: 10px 0;
+
+		.col-7,
+		.col-5{
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		&__description {
+			font-size: 20px;
+			line-height: 28px;
+			margin: 0 0 24px;
+		}
+		&__image {
+			margin: 10px 0 0 8px;
+
+			img{
+				max-width: 91%;
+			}
+		}
+	}
+
+	.actual-program{
+		//margin: 317px 0 0;
+		margin: 27px 0 0;
+		padding: 8px 0 16px;
+
+		&__info{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 0 16px;
+		}
+		&__description{
+			font-size: 16px;
+			line-height: 22px;
+			max-width: 300px;
+		}
+		&__items{
+			margin-bottom: 16px;
+		}
+	}
+	.card{
+		padding: 26px 32px;
+		min-height: 202px;
+
+		&__icon{
+			padding: 0 6px;
+			margin: 0 26px 0 0;
+		}
+		&__title{
+			font-size: 20px;
+			line-height: 28px;
+		}
+		&__other{
+			flex-wrap: wrap;
+		}
+		&__price{
+			margin-bottom: 8px;
+		}
+	}
+
+	.consultation{
+		&__info{
+			padding-right: 16px;
+		}
+		&__description{
+			font-size: 20px;
+			line-height: 28px;
+		}
+		&__form{
+			max-width: 40%;
+		}
+		.input-name{
+			position: relative;
+			margin-bottom: 20px;
+
+			/*&__placeholder{
+				position: absolute;
+				color: $placeholder-gray;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 16px;
+			}
+
+			&.input-name_tel{
+				span{
+					display: none;
+				}
+			}
+
+			input{
+				&::-webkit-input-placeholder,
+				&::-moz-placeholder,
+				&:-moz-placeholder,
+				&:-ms-input-placeholder{opacity: 0;}
+
+				&:focus{
+					outline: none;
+					&::-webkit-input-placeholder,
+					&::-moz-placeholder,
+					&:-moz-placeholder,
+					&:-ms-input-placeholder{opacity: 0;}
+				}
+			}*/
+		}
+		.checkbox{
+			font-size: 12px;
+			line-height: 16px;
+			margin-top: 8px;
+
+			&::before{
+				top: -4px
+			}
+		}
+	}
+}
+
+@media (max-width: 980px) {
+	.header{
+		.menu{
+			white-space: nowrap;
+		}
+		.other-menu__contacts{
+			display: none;
+		}
+	}
+
+	.courses{
+		.col-4{
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		&__sidebar{
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
+
+	.first-screen {
+		.col-5 {
+			align-self: center;
+		}
+		&__image {
+			img{
+				max-width: 115%;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 768px) {
+	.header{
+		.logo{
+			flex: 0 0 85%;
+		}
+	}
+
+	.first-screen {
+		text-align: center;
+
+		.title{
+			text-align: left;
+		}
+
+		.col-7 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.col-5 {
+			display: none;
+		}
+		&__image {
+			margin: 0 0 16px;
+
+			img{
+				max-width: 90%;
+			}
+		}
+	}
+
+	.actual-program{
+		.swiper-slide{
+			max-width: 98%;
+		}
+		&__items{
+			.wrapper {
+				padding: 0 0 0 16px;
+			}
+		}
+	}
+	.card {
+		align-items: flex-start;
+		padding: 16px;
+		min-height: 164px;
+
+		&__title{
+			font-size: 16px;
+			line-height: 22px;
+		}
+		&__description{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__price{
+			font-size: 16px;
+			line-height: 22px;
+		}
+		&__icon {
+			padding: 0 6px 0 0;
+			margin: 0 6px 0 0;
+
+			img{
+				max-width: 65px;
+			}
+		}
+	}
+
+	.consultation {
+		&__container{
+			flex-wrap: wrap;
+			padding: 32px;
+		}
+		&__info,
+		&__form {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+		.input-name{
+			position: relative;
+			margin-bottom: 24px;
+
+			&__placeholder{
+				position: relative;
+				color: $white;
+				top: 0;
+				transform: translateY(0);
+				left: 0;
+			}
+
+			&.input-name_tel{
+				span{
+					display: block;
+				}
+			}
+		}
+		.checkbox{
+			&::before{
+				top: -2px;
+			}
+		}
+	}
+}
+@media (max-width: 560px) {
+	.title{
+		font-size: 20px;
+		line-height: 28px;
+		margin: 16px 0;
+	}
+	.btn{
+		font-size: 14px;
+		line-height: 18px;
+		padding: 8px 12px 8px 14px;
+
+		svg {
+			top: 4px;
+			left: 2px;
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	.header{
+		.logo{
+			flex: 0 0 80%;
+		}
+	}
+
+	.first-screen {
+		padding: 0 0 24px;
+		margin: 0 0 10px;
+	}
+
+	.actual-program{
+		.swiper-slide{
+			max-width: 96%;
+		}
+	}
+	.card {
+		padding: 16px;
+		min-height: 164px;
+
+		&__title{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__description{
+			font-size: 12px;
+			line-height: 16px;
+		}
+		&__price{
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__icon {
+			img{
+				max-width: 44px;
+			}
+		}
+	}
+
+	.consultation{
+		&__container{
+			padding: 16px;
+		}
+		&__description{
+			font-size: 14px;
+			line-height: 18px;
+			margin: 12px 0 24px;
+		}
+		.btn{
+			align-self: center;
+		}
+	}
+}
+@media (max-width: 425px) {
+	.header{
+		.logo{
+			flex: 0 0 75%;
+		}
+		.tools{
+			svg{
+				margin: 5px;
+			}
+		}
+	}
+}

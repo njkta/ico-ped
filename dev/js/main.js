@@ -7,25 +7,42 @@ window.onload = function(){
         }
     })
 
-    let menuIcon = document.querySelectorAll('.icon-menu');
-    let menu = document.querySelector('.right-menu-container')
+    let menuOpen = document.querySelector('.menu > svg')
+    let menuClose = document.querySelector('.menu__close')
 
-    menuIcon.forEach(el => {
-        el.addEventListener("click", () => {
-            el.classList.toggle('close')
+    let menuContainer = document.querySelector('.menu__container')
+    let open = false
 
-            menu.classList.toggle('show')
-        })
-    })
+    let openMenu = () => {
+        if (!open){
+            open = true
+            menuContainer.classList.add('menu__show')
+            document.body.classList.add('show')
+        }
+    }
+    let closeMenu = () => {
+        if (open){
+            open = false
+            menuContainer.classList.remove('menu__show')
+            document.body.classList.remove('show')
+        }
+    }
+    menuOpen.addEventListener('click', openMenu)
+    menuClose.addEventListener('click', closeMenu)
+
+
 
     let swiper = new Swiper(".actual-program-slider", {
         slidesPerView: 2,
         spaceBetween: 24,
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: "auto",
                 spaceBetween: 4,
-                centeredSlides: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
             },
             769: {
                 slidesPerView: 2,
@@ -37,5 +54,12 @@ window.onload = function(){
             },
         }
     });
+
+    let courses = document.querySelector('.courses > .btn')
+
+    courses.addEventListener('click', e => {
+        courses.parentElement.classList.toggle('courses_show')
+        document.body.classList.toggle('show')
+    })
 }
 

@@ -7,19 +7,256 @@
     <link href="./css/main.css" rel="stylesheet">
     <title></title>
 </head>
-<body class="maket">
+<body class="">
 
-<header class="header"></header>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__line">
+            <div class="logo">
+                <a class="logo__img" href="/">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <a class="logo__link" href="/document">Сведения об образовательной организации</a>
+            </div>
+            <div class="menu">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="#menu"></use>
+                </svg>
+                <span class="hide-mobile">Меню</span>
+                <div class="menu__container">
+                    <div class="wrapper">
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <div class="menu__title">Меню</div>
+                                <div class="menu__close">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="menu__contacts">
+                                <div class="contacts__phone">
+                                    <svg width="25" height="24" viewBox="0 0 25 24">
+                                        <use xlink:href="#call"></use>
+                                    </svg>
+                                    <a href="tel:88005517949">8 800 551-79-49</a>
+                                </div>
+                                <div>
+                                    <div class="contacts__work-hours">Пн-Пт с 9 до 18 (по МСК) </div>
+                                    <div class="contacts__text">Бесплатно для РФ</div>
+                                </div>
+                            </div>
+                            <div class="menu__list">
+                                <a href="/courses" class="menu__link menu__link_bold">
+                                    <span>Курсы</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link">
+                                    <span>Бесплатно</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link">
+                                    <span>Информация</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link">
+                                    <span>Поступающим</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link">
+                                    <span>Организациям</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link">
+                                    <span>Направления института</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link menu__link_bold">
+                                    <span>Контакты</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                                <a href="/courses" class="menu__link menu__link_bold">
+                                    <span>Войти</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="menu__tools">
+                                <a href="/courses" class="btn btn_middle">
+                                    Оплата онлайн
+                                </a>
+                                <a href="/courses" style="text-decoration: underline">
+                                    Скачать квитанцию
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses hide-mobile">
+                <button class="btn btn_down btn_middle">
+                    Курсы
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </button>
+                <div class="courses__container">
+                    <div class="wrapper">
+                        <div class="courses__list">
+                            <div class="courses__sidebar">
+                                <a href="/course" class="sidebar__link sidebar__link_active">Дошкольное образование, воспитатель</a>
+                                <a href="/course" class="sidebar__link">Дополнительное образование</a>
+                            </div>
+                            <div class="courses__categories">
+                                <div class="courses__tabs">
+                                    <input id="tab1" type="radio" name="tabs" checked>
+                                    <label for="tab1" class="courses__tab">
+                                        Воспитатель
+                                    </label>
+                                    <input id="tab2" type="radio" name="tabs">
+                                    <label for="tab2" class="courses__tab">
+                                        Старший воспитатель
+                                    </label>
+                                    <input id="tab3" type="radio" name="tabs">
+                                    <label for="tab3" class="courses__tab">
+                                        Старший воспитатель
+                                    </label>
+                                    <input id="tab4" type="radio" name="tabs">
+                                    <label for="tab4" class="courses__tab">
+                                        Старший воспитатель
+                                    </label>
+                                </div>
+                                <div class="courses__tabs-content" id="tab-content1">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="courses__item">
+                                                <div class="courses__type">Повышение квалификации</div>
+                                                <a href="/course" class="courses__link">
+                                                    Внутренняя оценка качества образования в ДОО с использованием инструментария МКДО
+                                                </a>
+                                                <a href="/course"  class="courses__link">
+                                                    Правила гигиены. Особенности работы детского сада в условиях сложной санитарно-эпидемиологической обстановки. Использование новейших технологий в организации дошкольного образования
+                                                </a>
+                                                <div class="see-all">
+                                                    <a href="/courses">Смотреть еще (52)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="courses__item">
+                                                <div class="courses__type">Повышение квалификации</div>
+                                                <div class="courses__link">
+                                                    Внутренняя оценка качества образования в ДОО с использованием инструментария МКДО
+                                                </div>
+                                                <div class="courses__link">
+                                                    Правила гигиены. Особенности работы детского сада в условиях сложной санитарно-эпидемиологической обстановки. Использование новейших технологий в организации дошкольного образования
+                                                </div>
+                                                <div class="see-all">
+                                                    <a href="/courses">Смотреть еще (52)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="courses__item">
+                                                <div class="courses__type">Повышение квалификации</div>
+                                                <div class="courses__link">
+                                                    Внутренняя оценка качества образования в ДОО с использованием инструментария МКДО
+                                                </div>
+                                                <div class="courses__link">
+                                                    Правила гигиены. Особенности работы детского сада в условиях сложной санитарно-эпидемиологической обстановки. Использование новейших технологий в организации дошкольного образования
+                                                </div>
+                                                <div class="see-all">
+                                                    <a href="/courses">Смотреть еще (52)</a>
+                                                </div>
+                                            </div>
+                                            <div class="courses__item">
+                                                <div class="courses__type">Повышение квалификации</div>
+                                                <div class="courses__link">
+                                                    Внутренняя оценка качества образования в ДОО с использованием инструментария МКДО
+                                                </div>
+                                                <div class="see-all">
+                                                    <a href="/courses">Смотреть еще (52)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="courses__more">
+                                    <a href="/courses" class="btn btn_middle btn_outline">
+                                        Все курсы
+                                    </a>
+                                    <a href="/courses" class="btn btn_middle">
+                                        Еще в категории (132)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="other-menu">
+                <div class="other-menu__free">
+                    <button class="btn btn_down btn_middle btn_transparent">
+                        Бесплатно
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+                <a href="/contacts" class="other-menu__contacts">Контакты</a>
+            </div>
+            <div class="contacts hide-mobile">
+                <div class="contacts__work-hours">Пн-Пт с 9 до 18 (по МСК) </div>
+                <div class="contacts__phone">
+                    <svg width="25" height="24" viewBox="0 0 25 24">
+                        <use xlink:href="#call"></use>
+                    </svg>
+                    <a href="tel:88005517949">8 800 551-79-49</a>
+                </div>
+                <div class="contacts__text">Бесплатно для РФ</div>
+            </div>
+            <div class="tools">
+                <svg width="25" height="24" viewBox="0 0 25 24">
+                    <use xlink:href="#search"></use>
+                </svg>
+                <svg class="hide-mobile" width="25" height="24" viewBox="0 0 25 24">
+                    <use xlink:href="#eye"></use>
+                </svg>
+                <span class="lk hide-mobile">
+                    <svg width="25" height="24" viewBox="0 0 25 24">
+                        <use xlink:href="#lk"></use>
+                    </svg>
+                    <span class="enter-lk">Войти</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
 <main class="main">
     <section class="first-screen">
         <div class="wrapper">
             <div class="row">
                 <div class="col-7">
-                    <div class="first-screen__tag">От 1 недели</div>
+                    <div class="first-screen__tag hide-mobile">От 1 недели</div>
                     <h1 class="first-screen__title title">
                         <span class="text_blue">Дистанционные курсы</span> профессиональной переподготовки и повышения квалификации для педагогов, воспитателей, психологов
                     </h1>
-                    <div class="first-screen__description">
+                    <div class="first-screen__description hide-mobile">
                         Повысьте компетентность и профессиональный уровень, подтвердите категорию, подготовьтесь к аттестации или освойте новую специальность, не выходя из дома
                     </div>
                     <div class="first-screen__image hide-desktop">
@@ -50,7 +287,12 @@
                     Пополните багаж знаний, расширьте его востребованными навыками и подтвердите свою квалификацию
                 </div>
             </div>
-            <div class="actual-program__items">
+            <div class="actual-program__pagination">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="actual-program__items">
+            <div class="wrapper">
                 <div class="swiper actual-program-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -159,22 +401,22 @@
                 </div>
                 <form class="consultation__form" name="" action="">
                     <label class="input-name">
-                        <span>Имя</span>
-                        <input type="text" placeholder="Ввести">
+                        <span class="input-name__placeholder">Имя</span>
+                        <input type="text" placeholder="Ввести" required pattern="^[а-яА-Яa-zA-Z0-9]+${3,16}$/">
                     </label>
                     <label class="input-name">
-                        <span>Электронная почта</span>
-                        <input type="text" placeholder="Ввести">
+                        <span class="input-name__placeholder">Электронная почта</span>
+                        <input type="email" placeholder="Ввести" required pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
                     </label>
-                    <label class="input-name">
+                    <label class="input-name input-name_tel">
                         <span>Телефон</span>
-                        <input type="tel" placeholder="+7(000) 000 00 00">
+                        <input type="tel" placeholder="+7(000) 000 00 00" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
                     </label>
                     <label class="input-name">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <span class="checkbox">Нажимая, вы даете согласие на обработку своих персональных данных.</span>
                     </label>
-                    <button type="button" class="btn btn_green">
+                    <button type="submit" class="btn btn_green">
                         Посмотреть все курсы
                         <svg width="24" height="24" viewBox="0 0 24 24">
                             <use xlink:href="#arrow-right"></use>
@@ -186,16 +428,19 @@
     </section>
 </main>
 
-<svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="search" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="currentColor"/>
+<svg viewBox="0 0 1 1" width="1px" height="1px" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 7C4 6.44772 4.44772 6 5 6H19C19.5523 6 20 6.44772 20 7C20 7.55228 19.5523 8 19 8H5C4.44772 8 4 7.55228 4 7ZM4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12ZM4 17C4 16.4477 4.44772 16 5 16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H5C4.44772 18 4 17.5523 4 17Z" fill="currentColor"/>
     </symbol>
-    <symbol id="eae" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="
-            M13 7C13 8.65685 11.6569 10 10 10C8.34315 10 7 8.65685 7 7C7 5.34315 8.34315 4 10 4C11.6569 4 13 5.34315 13 7Z
-            M19.8944 6.55279C17.7362 2.23635 13.9031 0 10 0C6.09687 0 2.26379 2.23635 0.105573 6.55279C-0.0351909 6.83431 -0.0351909 7.16569 0.105573 7.44721C2.26379 11.7637 6.09687 14 10 14C13.9031 14 17.7362 11.7637 19.8944 7.44721C20.0352 7.16569 20.0352 6.83431 19.8944 6.55279ZM10 12C7.03121 12 3.99806 10.3792 2.12966 7C3.99806 3.62078 7.03121 2 10 2C12.9688 2 16.0019 3.62078 17.8703 7C16.0019 10.3792 12.9688 12 10 12Z
-            "
-          fill="currentColor"/>
+    <symbol id="call" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.33301 4H8.82295L10.2702 7.61803L7.94528 9.16795C7.66708 9.35342 7.49998 9.66565 7.49998 10C7.50252 10.0936 7.49998 10.001 7.49998 10.001L7.49998 10.002L7.49999 10.0043L7.50002 10.0093L7.50017 10.0217C7.50032 10.0309 7.50057 10.0421 7.50099 10.0552C7.50184 10.0814 7.50337 10.1153 7.5061 10.1564C7.51158 10.2385 7.52189 10.3494 7.54128 10.4852C7.58004 10.7565 7.65526 11.1281 7.8013 11.5662C8.09453 12.4459 8.67071 13.5849 9.79288 14.7071C10.915 15.8293 12.054 16.4054 12.9338 16.6987C13.3719 16.8447 13.7435 16.9199 14.0148 16.9587C14.1505 16.9781 14.2615 16.9884 14.3436 16.9939C14.3847 16.9966 14.4186 16.9981 14.4448 16.999C14.4579 16.9994 14.4691 16.9997 14.4783 16.9998L14.4906 17L14.4957 17L14.4979 17L14.499 17C14.499 17 14.6106 16.9939 14.5 17C14.8788 17 15.225 16.786 15.3944 16.4472L16.0641 15.1078L20.5 15.8471V20.167C18.3889 20.4723 12.6874 20.7732 8.20709 16.2929C3.72679 11.8126 4.0277 6.1111 4.33301 4ZM9.57363 10.4861L11.3796 9.28213C12.1665 8.75751 12.4784 7.75338 12.1271 6.87525L10.6799 3.25722C10.3762 2.4979 9.64076 2 8.82295 2H4.28076C3.37225 2 2.51707 2.63116 2.36792 3.6169C2.02861 5.8595 1.56677 12.481 6.79288 17.7071C12.019 22.9332 18.6405 22.4714 20.8831 22.1321C21.8688 21.9829 22.5 21.1277 22.5 20.2192V15.8471C22.5 14.8694 21.7932 14.0351 20.8288 13.8743L16.3929 13.135C15.5268 12.9907 14.6679 13.4281 14.2753 14.2134L13.9288 14.9064C13.8199 14.8796 13.6983 14.8453 13.5662 14.8013C12.9459 14.5946 12.0849 14.1707 11.2071 13.2929C10.3293 12.4151 9.90543 11.5541 9.69867 10.9338C9.64279 10.7662 9.60257 10.6154 9.57363 10.4861Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="eye" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" fill="#111827"/>
+        <path d="M21.8944 11.5528C19.7362 7.23635 15.9031 5 12 5C8.09687 5 4.26379 7.23635 2.10557 11.5528C1.96481 11.8343 1.96481 12.1657 2.10557 12.4472C4.26379 16.7637 8.09687 19 12 19C15.9031 19 19.7362 16.7637 21.8944 12.4472C22.0352 12.1657 22.0352 11.8343 21.8944 11.5528ZM12 17C9.03121 17 5.99806 15.3792 4.12966 12C5.99806 8.62078 9.03121 7 12 7C14.9688 7 18.0019 8.62078 19.8703 12C18.0019 15.3792 14.9688 17 12 17Z" fill="currentColor"/>
     </symbol>
     <symbol id="lk" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5651 19.3983C16.0223 20.5788 14.0928 21.2889 12 21.2889C9.97417 21.2889 8.10233 20.6249 6.58433 19.509C7.46067 17.3049 9.59925 15.7556 12.0981 15.7556C14.5538 15.7556 16.6622 17.2588 17.5651 19.3983ZM18.9639 18.0611C18.1279 16.4841 16.7685 15.2207 15.1185 14.5198C16.0196 13.6806 16.5833 12.4817 16.5833 11.1444C16.5833 8.59911 14.5309 6.53333 12 6.53333C9.46908 6.53333 7.41667 8.59911 7.41667 11.1444C7.41667 12.5093 8.007 13.7359 8.94475 14.5843C7.30575 15.3129 5.96558 16.604 5.15983 18.2087C3.71242 16.5763 2.83333 14.4276 2.83333 12.0667C2.83333 6.976 6.93725 2.84444 12 2.84444C17.0627 2.84444 21.1667 6.976 21.1667 12.0667C21.1667 14.3538 20.3371 16.4472 18.9639 18.0611ZM23 12.0667C23 18.181 18.0747 23.1333 12 23.1333C5.92525 23.1333 1 18.181 1 12.0667C1 5.95233 5.92525 1 12 1C18.0747 1 23 5.95233 23 12.0667ZM12 13.9111C13.5189 13.9111 14.75 12.6753 14.75 11.1444C14.75 9.61355 13.5189 8.37778 12 8.37778C10.4811 8.37778 9.25 9.61355 9.25 11.1444C9.25 12.6753 10.4811 13.9111 12 13.9111Z" fill="currentColor"/>
@@ -206,11 +451,14 @@
     <symbol id="arrow-right-small" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.19526 12.4712C5.93491 12.2109 5.93491 11.7888 6.19526 11.5284L9.72386 7.99984L6.19526 4.47124C5.93491 4.21089 5.93491 3.78878 6.19526 3.52843C6.45561 3.26808 6.87772 3.26808 7.13807 3.52843L11.1381 7.52843C11.3984 7.78878 11.3984 8.21089 11.1381 8.47124L7.13807 12.4712C6.87772 12.7316 6.45561 12.7316 6.19526 12.4712Z" fill="currentColor"/>
     </symbol>
+    <symbol id="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="currentColor"/>
+    </symbol>
+
 
 
 
 </svg>
-
 
 </body>
 
